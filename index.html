@@ -2,38 +2,71 @@
 <html lang="es">
     <head>
         <title>
-        El mundo del pan
+            El mundo del pan
         </title>
         <meta charset="UTF-8">
         <meta name="viewport"content="width=device-width, intial-scale=1.0">
         <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
         <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/estilos2.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     </head>
-    <body id="grid-area" class="borde">
-        <header id="incio"  class="backgroundImage">
-            <nav>
-                <span><a href="paginas/trayectoria.html" class="sinSubrayar">Trayectoria</a></span>
-                <span><a href="paginas/objetivo.html" class="sinSubrayar">Objetivo</a></span>
-                <span><a href="paginas/nuestraSeleccion.html" class="sinSubrayar">Nuestra selección</a></span>
-                <span><a href="paginas/ubicacion.html" class="sinSubrayar">Ubicación</a></span>
-                <span><a href="paginas/contacto.html" class="sinSubrayar">Contacto</a></span>
-            </nav>
+    <body id="grid-index" class="colorFondo">
+        <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="true" href="">Home</a>
+            <a class="nav-link" href="paginas/trayectoria.html">Trayectoria</a>
+            <a class="nav-link" href="paginas/objetivo.html">Objetivo</a>
+            <a class="nav-link" href="paginas/nuestraSeleccion.html">Nuestra seleccion</a>
+            <a class="nav-link" href="paginas/ubicacion.html">Ubicacion</a>
+            <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+        </nav>
+        <header id="incio" class="borde">
             <h1>El maestro del pan</h1>
         </header>
         <main>
-            <h1>a donde queremeos ir</h1>
-            <p>
-                azucar
-            </p>
-            <section>
-                <h2>Como nos vemos</h2>
-                <p>
-                    sal
-                </p>
+            <div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="imagenes/panCasero.jpg" class="img-fluid" class="d-block w-100" class="img" alt="imagen pan casero">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/brioche.webp" class="img-fluid" class="d-block w-100"  class="img" alt="imagen pan">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/estanteria.jpg" class="img-fluid" class="d-block w-100" class="img" alt="imagen pan en estantes">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <section>            
+                <article class="borde">
+                    <h1>a donde queremeos ir</h1>
+                    <p>
+                        La principal hipótesis es que el nombre elegido resultó de la combinación de Bingo (el popular juego de azar) y Bambi (la famosa película de Disney). 
+                        El nombre de “Bimbo” aparece por primera vez en una lista de propuestas elaboradas por los fundadores en 1943, marcado con un círculo entre varios otros como Pan Rex, Pan NSE (Nutritivo, Sabroso y Económico), Sabrosoy, Pan Lirio, Pan Nieve y Pan Azteca. 
+                        Tiempo después, los fundadores sabrían que en italiano coloquial a los niños (bambino) se les dice bimbo, que en húngaro la palabra significa capullo, y que curiosamente en China el fonema para designar al pan suena muy parecido a Bimbo.
+                    </p>    
+                </article>
+                <article class="borde">
+                    <h2>Como nos vemos</h2>
+                    <p>
+                        Panificación Bimbo inició operaciones el 2 de diciembre de 1945, la visión de sus creadores era “hacer un pan realmente bueno, nutritivo, sabroso, fresco… Hacerlo bien, con limpieza, con la mayor perfección, con la intención de nutrir, agradar y llegar así a todos los hogares de México”.
+                        Los fundadores de la empresa fueron Lorenzo Servitje, Jaime Jorba, Jaime Sendra. José T. Mata, Alfonso Velasco y Roberto Servitje. 
+                        Al comienzo solo se elaboraban cuatro tipos de pan: Super-pan Bimbo, grande y chico, negro y tostado.
+                    </p>
+                </article>
             </section>
         </main>
         <footer>
@@ -41,5 +74,6 @@
             <a href="#inicio" >Volver al inicio</a>
             <img src="imagenes/imagen superior.jpg" width="300" alt="Foto de muestra de panes">
         </footer>
+        <script src="bootstrap/js/bootstrap.js"></script>
     </body>
 </html>

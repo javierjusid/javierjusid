@@ -1,61 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>
-        El mundo del pan
-        </title>
-        <meta charset="UTF-8">
-        <meta name="viewport"content="width=device-width, intial-scale=1.0">
-        <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-      </head>
-    <body id="grid-area" class="borde">
-        <header class="backgroundImage">
-            <h1>Galeria</h1>
-            <nav>
-                <span><a href="../index.html" class="sinSubrayar">Inicio</a></span>
-                <span><a href="trayectoria.html" class="sinSubrayar">Trayectoria</a></span>
-                <span><a href="objetivo.html" class="sinSubrayar">Objetivo</a></span>
-                <span><a href="nuestraSeleccion.html" class="sinSubrayar">Nuestra selección</a></span>
-                <span><a href="ubicacion.html" class="sinSubrayar">Ubicación</a></span>
-                <span><a href="contacto.html" class="sinSubrayar">Contacto</a></span>
-            </nav>
-        </header>
-        <main>
-            <!--galeria de imagenes-->
-            <div>
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../imagenes/panCasero.jpg" class="img-thumbnail" class="d-block w-100" alt="imagen pan casero">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../imagenes/imagen superior.jpg" class="img-thumbnail" class="d-block w-100" alt="imagen pan">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../imagenes/estanteria.jpg" class="img-thumbnail" class="d-block w-100" alt="imagen pan en estantes">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </div>
-        </main>
-        <footer>
-            Desarrollado por Javier Jusid
-            <img src="../imagenes/imagen superior.jpg" width="300" alt="Foto de muestra de panes">
-        </footer>
-        <script src="../bootstrap/js/bootstrap.js"></script>
-    </body>
+  <head>
+      <title>
+      El mundo del pan
+      </title>
+      <meta charset="UTF-8">
+      <meta name="viewport"content="width=device-width, intial-scale=1.0">
+      <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="../css/estilos2.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  </head>
+  <body id="grid-nuestraSeleccion" class="colorFondo">
+    <nav class="nav flex-column">
+        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        <a class="nav-link" href="trayectoria.html">Trayectoria</a>
+        <a class="nav-link" href="objetivo.html">Objetivo</a>
+        <a class="nav-link" href="nuestraSeleccion.html">Nuestra seleccion</a>
+        <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+    </nav>
+    <header id="incio" class="borde">
+        <h1>Galeria</h1>
+    </header>
+    <main>
+      <!--galeria de imagenes-->
+      <div>
+        <img src="../imagenes/panCasero.jpg" class="img-thumbnail" alt="imagen pan casero">
+        <img src="../imagenes/imagen superior.jpg" class="img-thumbnail" alt="imagen pan">
+        <img src="../imagenes/estanteria.jpg" class="img-thumbnail" alt="imagen pan en estantes">
+      </div>
+    </main>
+    <footer>
+      Desarrollado por Javier Jusid
+      <a href="#inicio" >Volver al inicio</a>
+      <img src="../imagenes/imagen superior.jpg" width="300" alt="Foto de muestra de panes">
+    </footer>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+  </body>
 </html>

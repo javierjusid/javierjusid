@@ -6,40 +6,48 @@
         </title>
         <meta charset="UTF-8">
         <meta name="viewport"content="width=device-width, intial-scale=1.0">
-        <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos2.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     </head>
-    <body id="grid-area" class="borde">
-        <header class="backgroundImage">
+    <body id="grid-objetivo" class="colorFondo">
+        <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link" href="trayectoria.html">Trayectoria</a>
+            <a class="nav-link" href="objetivo.html">Objetivo</a>
+            <a class="nav-link" href="nuestraSeleccion.html">Nuestra seleccion</a>
+            <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+        </nav>
+        <header id="incio" class="borde">
             <h1>Donde queremos estar</h1>
-            <nav>
-                <span><a href="../index.html" class="sinSubrayar">Inicio</a></span>
-                <span><a href="trayectoria.html" class="sinSubrayar">Trayectoria</a></span>
-                <span><a href="objetivo.html" class="sinSubrayar">Objetivo</a></span>
-                <span><a href="nuestraSeleccion.html" class="sinSubrayar">Nuestra selección</a></span>
-                <span><a href="ubicacion.html" class="sinSubrayar">Ubicación</a></span>
-                <span><a href="contacto.html" class="sinSubrayar">Contacto</a></span>
-            </nav>
         </header>
         <main>
-            <h1>Ideales</h1>
-            <p>
-
-            </p>
-            <section>
-                <!--Video produccion-->
+           <section>
+                <article id="texto" class="borde">
+                    <h1>Ideales</h1>
+                    <p>
+                        la visión de sus creadores era “hacer un pan realmente bueno, nutritivo, sabroso, fresco… Hacerlo bien, con limpieza, con la mayor perfección, con la intención de nutrir, agradar y llegar así a todos los hogares de México”. 
+                        Los fundadores de la empresa fueron Lorenzo Servitje, Jaime Jorba, Jaime Sendra. José T. Mata, Alfonso Velasco y Roberto Servitje. 
+                    </p>
+                </article>    
+                <article id="video">
+                    <!--Video produccion-->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/fwzjlPLyOkQ" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>        
-            </section>
+                allowfullscreen></iframe>  
+                </article>
+           </section>
         </main>
         <footer>
             Desarrollado por Javier Jusid
+            <a href="#inicio" >Volver al inicio</a>
             <img src="../imagenes/imagen superior.jpg" width="300" alt="Foto de muestra de panes">
         </footer>
+        <script src="../bootstrap/js/bootstrap.js"></script>
     </body>
 </html>
