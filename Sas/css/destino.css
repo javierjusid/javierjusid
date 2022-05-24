@@ -1,5 +1,6 @@
 * {
-  margin: 2px;
+  margin: 1vh;
+  padding: 1vw;
 }
 
 .borde {
@@ -7,7 +8,11 @@
 }
 
 .colorFondo {
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.479), rgb(8, 128, 150));
+  background-image: linear-gradient(45deg, rgba(0, 28, 51, 0.925) 2%, rgba(240, 130, 56, 0.699) 80%);
+}
+
+.colormarco {
+  background-image: linear-gradient(135deg, rgb(255, 149, 50) 20%, rgb(19, 87, 175) 100%);
 }
 
 #grid-index {
@@ -15,38 +20,62 @@
   grid-template-areas: "menu" "titulo" "pictures" "section" "footer";
   font-family: "PT Serif", serif;
   grid-template-rows: auto;
-  grid-row-gap: 5px;
-}
-#grid-index nav {
-  grid-area: menu;
-  margin-bottom: 3.4vh;
-  justify-content: center;
-}
-#grid-index nav a {
-  margin-top: 4vh;
-  text-align: center;
-  border: solid 5px black;
-}
-#grid-index nav a:hover {
-  border: double 5px rgb(255, 115, 0);
 }
 #grid-index header {
-  grid-area: titulo;
+  grid-area: menu;
   margin-left: 1vw;
+  margin-bottom: -2vh;
+  margin-top: -1vh;
+  text-align: center;
+}
+#grid-index header a:hover {
+  border: double 5px rgba(252, 136, 41, 0.829);
 }
 #grid-index div {
   grid-area: pictures;
-  height: 200px;
-  margin-left: 3%;
+  height: 300px;
+  margin-top: -2vh;
+  margin-left: -0.2vw;
 }
 #grid-index section {
   grid-area: section;
-}
-#grid-index article {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: 1vw;
 }
 #grid-index footer {
+  grid-area: footer;
+  text-align: right;
+}
+
+#grid-trayectoria {
+  display: grid;
+  grid-template-areas: "menu" "titulo" "section" "footer";
+  font-family: "PT Serif", serif;
+  grid-template-rows: auto;
+  grid-row-gap: 5px;
+}
+#grid-trayectoria header {
+  grid-area: menu;
+  margin-left: 1vw;
+  margin-bottom: -2vh;
+  margin-top: -1vh;
+  text-align: center;
+}
+#grid-trayectoria header a:hover {
+  border: double 5px rgba(252, 136, 41, 0.829);
+}
+#grid-trayectoria h1 {
+  grid-area: titulo;
+  height: 200px;
+  width: 90%;
+  margin-top: 2vh;
+  margin-left: 4.5vw;
+  text-align: center;
+  padding-top: 7vh;
+}
+#grid-trayectoria section {
+  grid-area: section;
+}
+#grid-trayectoria footer {
   grid-area: footer;
   text-align: right;
 }
@@ -54,26 +83,28 @@
 #grid-objetivo {
   display: grid;
   grid-template-areas: "menu" "titulo" "texto" "video" "footer";
-  background-color: rgb(122, 68, 7);
   font-family: "PT Serif", serif;
   grid-template-rows: auto;
   grid-row-gap: 5px;
 }
-#grid-objetivo nav {
-  grid-area: menu;
-  margin-bottom: 3.4vh;
-  justify-content: center;
-}
-#grid-objetivo nav a {
-  margin-top: 4vh;
-  text-align: center;
-  border: solid 5px black;
-}
-#grid-objetivo nav a:hover {
-  border: double 5px rgb(255, 115, 0);
-}
 #grid-objetivo header {
+  grid-area: menu;
+  margin-left: 1vw;
+  margin-bottom: -2vh;
+  margin-top: -1vh;
+  text-align: center;
+}
+#grid-objetivo header a:hover {
+  border: double 5px rgba(252, 136, 41, 0.829);
+}
+#grid-objetivo h1 {
   grid-area: titulo;
+  height: 200px;
+  width: 90%;
+  margin-top: 2vh;
+  margin-left: 4.5vw;
+  text-align: center;
+  padding-top: 7vh;
 }
 #grid-objetivo #texto {
   grid-area: texto;
@@ -90,76 +121,38 @@
 #grid-nuestraSeleccion {
   display: grid;
   grid-template-areas: "menu" "titulo" "pictures" "footer";
-  background-color: rgb(122, 68, 7);
   font-family: "PT Serif", serif;
   grid-template-rows: auto;
   grid-row-gap: 5px;
 }
-#grid-nuestraSeleccion nav {
-  grid-area: menu;
-  margin-bottom: 3.4vh;
-  justify-content: center;
-}
-#grid-nuestraSeleccion nav a {
-  margin-top: 4vh;
-  text-align: center;
-  border: solid 5px black;
-}
-#grid-nuestraSeleccion nav a:hover {
-  border: double 5px rgb(255, 115, 0);
-}
 #grid-nuestraSeleccion header {
+  grid-area: menu;
+  margin-left: 1vw;
+  margin-bottom: -2vh;
+  margin-top: -1vh;
+  text-align: center;
+}
+#grid-nuestraSeleccion header a:hover {
+  border: double 5px rgba(252, 136, 41, 0.829);
+}
+#grid-nuestraSeleccion h1 {
   grid-area: titulo;
+  height: 200px;
+  width: 90%;
+  margin-top: 2vh;
+  margin-left: 4.5vw;
+  text-align: center;
+  padding-top: 7vh;
 }
 #grid-nuestraSeleccion section {
+  grid-area: pictures;
   display: flex;
   flex-direction: column;
-  grid-area: pictures;
   width: 70%;
   margin-left: 15%;
   padding: 2%;
 }
 #grid-nuestraSeleccion footer {
-  grid-area: footer;
-  text-align: right;
-}
-
-#grid-trayectoria {
-  display: grid;
-  grid-template-areas: "menu" "titulo" "section" "footer";
-  font-family: "PT Serif", serif;
-  grid-template-rows: auto;
-  grid-row-gap: 5px;
-}
-#grid-trayectoria nav {
-  grid-area: menu;
-  margin-bottom: 3.4vh;
-  justify-content: center;
-}
-#grid-trayectoria nav a {
-  margin-top: 4vh;
-  text-align: center;
-  border: solid 5px black;
-}
-#grid-trayectoria nav a:hover {
-  border: double 5px rgb(255, 115, 0);
-}
-#grid-trayectoria header {
-  grid-area: titulo;
-  margin-left: 1vw;
-}
-#grid-trayectoria div {
-  grid-area: pictures;
-  margin-left: 3%;
-}
-#grid-trayectoria section {
-  grid-area: section;
-}
-#grid-trayectoria article {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-#grid-trayectoria footer {
   grid-area: footer;
   text-align: right;
 }
@@ -171,22 +164,24 @@
   grid-template-rows: auto;
   grid-row-gap: 5px;
 }
-#grid-ubicacion nav {
-  grid-area: menu;
-  margin-bottom: 3.4vh;
-  justify-content: center;
-}
-#grid-ubicacion nav a {
-  margin-top: 4vh;
-  text-align: center;
-  border: solid 5px black;
-}
-#grid-ubicacion nav a:hover {
-  border: double 5px rgb(255, 115, 0);
-}
 #grid-ubicacion header {
-  grid-area: titulo;
+  grid-area: menu;
   margin-left: 1vw;
+  margin-bottom: -2vh;
+  margin-top: -1vh;
+  text-align: center;
+}
+#grid-ubicacion header a:hover {
+  border: double 5px rgba(252, 136, 41, 0.829);
+}
+#grid-ubicacion h1 {
+  grid-area: titulo;
+  height: 200px;
+  width: 90%;
+  margin-top: 2vh;
+  margin-left: 4.5vw;
+  text-align: center;
+  padding-top: 7vh;
 }
 #grid-ubicacion section {
   grid-area: section;
@@ -211,22 +206,24 @@
   grid-template-rows: auto;
   grid-row-gap: 5px;
 }
-#grid-contacto nav {
-  grid-area: menu;
-  margin-bottom: 3.4vh;
-  justify-content: center;
-}
-#grid-contacto nav a {
-  margin-top: 4vh;
-  text-align: center;
-  border: solid 5px black;
-}
-#grid-contacto nav a:hover {
-  border: double 5px rgb(255, 115, 0);
-}
 #grid-contacto header {
-  grid-area: titulo;
+  grid-area: menu;
   margin-left: 1vw;
+  margin-bottom: -2vh;
+  margin-top: -1vh;
+  text-align: center;
+}
+#grid-contacto header a:hover {
+  border: double 5px rgba(252, 136, 41, 0.829);
+}
+#grid-contacto h1 {
+  grid-area: titulo;
+  height: 200px;
+  width: 90%;
+  margin-top: 2vh;
+  margin-left: 4.5vw;
+  text-align: center;
+  padding-top: 7vh;
 }
 #grid-contacto section {
   grid-area: section;
