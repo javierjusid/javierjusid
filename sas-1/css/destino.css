@@ -50,8 +50,11 @@
 }
 
 @media (max-width: 580px) {
-  #grid-index {
-    grid-template-rows: 35vh 50vh 100vh 20vh;
+  #grid-index #carousel {
+    margin-top: 20vh;
+  }
+  #grid-index #carousel section {
+    margin-bottom: 20vh;
   }
 
   #grid-trayectoria h1 {
@@ -91,7 +94,7 @@
 }
 @media (max-width: 760px) {
   #grid-index {
-    grid-template-rows: 15vh 50vh 100vh 20vh;
+    grid-template-rows: 15vh 50vh 120vh 20vh;
   }
 }
 #grid-trayectoria {
