@@ -1,5 +1,4 @@
 * {
-    margin: 1vh;
     padding: 1vw;
 }
 .borde { 
@@ -11,47 +10,39 @@
 .colormarco {
     background-image: linear-gradient(135deg, rgb(255, 149, 50) 20%, rgb(19, 87, 175) 100%);
 }
-@media (max-width: 880px) {
-    #grid-index {
-        div {
-            margin-top: 0vh;
-        } 
-        section {
-            margin-top: -2vh;
-        }
-    }
-}
+
 #grid-index {
     display: grid;
     grid-template-areas:
     "menu"
-    "titulo"
     "pictures"
     "section"
     "footer";
     font-family: 'PT Serif', serif;
-    grid-template-rows: auto;
+    grid-template-rows: 7.5vh 10vh 120vh 20vh;
+    
     header {
         grid-area: menu;
         margin-left: 1vw;
-        margin-bottom: -2vh;
-        margin-top: -1vh;
+        margin-right: 1vw;
         text-align: center;
         a:hover {
             border: double 5px rgba(31, 14, 0, 0.829);
+            margin-right: 2vw;
         }
     }
-    div {
+    #carousel {
         grid-area: pictures;
-        height: 300px;
-        margin-top: -2vh;
-        margin-left: -0.2vw;
+        margin-left: -1vw;
+        div {
+            height: 40vh
+        }
     }
     section {
         grid-area: section;
-        padding: 1vw;
+        padding: 2vw;
         article {
-            margin-top: 3vh;
+            margin-top: 4vh;
         }
     }
     footer {
@@ -59,6 +50,57 @@
         text-align: right;
     }
 }
+@media (max-width: 580px) {
+    #grid-index {
+        grid-template-rows: 35vh 50vh 100vh 20vh;
+    }
+    #grid-trayectoria {
+        h1{
+            margin-top: 20vh;
+        }
+        footer {
+            margin-top: 20vh;
+        }
+    }
+    #grid-objetivo {
+        h1{
+            margin-top: 20vh;
+        }
+        footer {
+            margin-top: 20vh;
+        }
+    }
+    #grid-nuestraSeleccion {
+        h1{
+            margin-top: 20vh;
+        }
+        footer {
+            margin-top: -50vh;
+        }
+    }
+    #grid-ubicacion {
+        h1{
+            margin-top: 20vh;
+        }
+        footer {
+            margin-top: 20vh;
+        }
+    }
+    #grid-contacto {
+        h1{
+            margin-top: 20vh;
+        }
+        footer {
+            margin-top: 20vh;
+        }
+    }
+}
+@media (max-width: 760px) {
+    #grid-index {
+        grid-template-rows: 15vh 50vh 100vh 20vh;
+    }
+}
+
 #grid-trayectoria {
     display: grid;
     grid-template-areas:
@@ -67,14 +109,11 @@
     "section"
     "footer";
     font-family: 'PT Serif', serif;
-    grid-template-rows: auto;
-    grid-row-gap: 5px;
+    grid-template-rows: 18vh 10vh 100vh 20vh;
 
     header {
         grid-area: menu;
         margin-left: 1vw;
-        margin-bottom: -2vh;
-        margin-top: -1vh;
         text-align: center;
         a:hover {
             border: double 5px rgba(31, 14, 0, 0.829);
@@ -82,15 +121,18 @@
     }
     h1 {
         grid-area: titulo;
-        height: 200px;
-        width: 90%;
-        margin-top: 2vh;
-        margin-left: 4.5vw;
+        height: 30vh;
+        width: 88%;
+        margin-left: 5vw;
         text-align: center;
-        padding-top: 7vh;
+        padding-top: 10vh;
     }
     section {
         grid-area: section;
+        padding: 2vw;
+        article {
+            margin-top: 4vh;
+        }
     }
     footer {
         grid-area: footer;
@@ -106,9 +148,8 @@
     "video"
     "footer";
     font-family: 'PT Serif', serif;
-    grid-template-rows: auto;
-    grid-row-gap: 5px;
-
+    grid-template-rows: 18vh 10vh 10vh 90vh 20vh;
+    
     header {
         grid-area: menu;
         margin-left: 1vw;
@@ -121,12 +162,11 @@
     }
     h1 {
         grid-area: titulo;
-        height: 200px;
-        width: 90%;
-        margin-top: 2vh;
-        margin-left: 4.5vw;
+        height: 30vh;
+        width: 88%;
+        margin-left: 5vw;
         text-align: center;
-        padding-top: 7vh;
+        padding-top: 8vh;
     }
     #texto {
         grid-area: texto;
@@ -148,8 +188,7 @@
     "pictures"
     "footer";
     font-family: 'PT Serif', serif;
-    grid-template-rows: auto;
-    grid-row-gap: 5px;
+    grid-template-rows: 18vh 10vh 260vh 20vh;
 
     header {
         grid-area: menu;
@@ -163,12 +202,11 @@
     }
     h1 {
         grid-area: titulo;
-        height: 200px;
-        width: 90%;
-        margin-top: 2vh;
-        margin-left: 4.5vw;
+        height: 30vh;
+        width: 88%;
+        margin-left: 5vw;
         text-align: center;
-        padding-top: 7vh;
+        padding-top: 8vh;
     }
     section {
         grid-area: pictures;
@@ -191,8 +229,7 @@
     "section"
     "footer";
     font-family: 'PT Serif', serif;
-    grid-template-rows: auto;
-    grid-row-gap: 5px;
+    grid-template-rows: 18vh 10vh 125vh 20vh;
 
     header {
         grid-area: menu;
@@ -206,23 +243,20 @@
     }
     h1 {
         grid-area: titulo;
-        height: 200px;
-        width: 90%;
-        margin-top: 2vh;
-        margin-left: 4.5vw;
+        height: 30vh;
+        width: 88%;
+        margin-left: 5vw;
         text-align: center;
-        padding-top: 7vh;
+        padding-top: 8vh;
     }
     section {
         grid-area: section;
-    }
-    article {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        article {
+            margin-top: 4vh;
+        }
     }
     #mapa {
-        height: 50vh;
-        margin-left: 25%;
+        height: 70vh;
     }
     footer {
         grid-area: footer;
@@ -237,8 +271,7 @@
     "section"
     "footer";
     font-family: 'PT Serif', serif;
-    grid-template-rows: auto;
-    grid-row-gap: 5px;
+    grid-template-rows: 18vh 10vh 100vh 20vh;
 
     header {
         grid-area: menu;
@@ -252,12 +285,11 @@
     }
     h1 {
         grid-area: titulo;
-        height: 200px;
-        width: 90%;
-        margin-top: 2vh;
-        margin-left: 4.5vw;
+        height: 30vh;
+        width: 88%;
+        margin-left: 5vw;
         text-align: center;
-        padding-top: 7vh;
+        padding-top: 8vh;
     }
     section {
         grid-area: section;
